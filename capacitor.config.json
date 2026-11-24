@@ -1,0 +1,28 @@
+{
+  "appId": "com.luyendemaster.app",
+  "appName": "Luyện đề master",
+  "webDir": "www",
+  "backgroundColor": "#0f172a",
+  "appendUserAgent": "LuyenDeMasterApp",
+  "server": {
+    "url": "https://luyendemaster.vercel.app",
+    "androidScheme": "https",
+    "errorPath": "offline.html",
+    "allowNavigation": [
+      "luyendemaster.vercel.app",
+      "*.firebaseio.com",
+      "*.firebaseapp.com",
+      "*.gstatic.com",
+      "*.googleapis.com"
+    ]
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}
